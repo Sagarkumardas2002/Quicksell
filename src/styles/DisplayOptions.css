@@ -1,0 +1,15 @@
+.display-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-weight: 800;
+  gap: 20px;
+}
+
+.display-options select {
+  padding: 5px;
+  border: 1px solid #d7c9c9;
+  border-radius: 4px;
+}
+
+
