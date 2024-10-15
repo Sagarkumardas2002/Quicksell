@@ -1,13 +1,19 @@
-.ticket-card {
-    background-color: #9b6e04e1; /* Muted dark blue-gray background */
-    border: 1px solid #ddd; 
-    border-radius: 8px; 
-    padding: 19px; 
-    margin-bottom: 15px; 
-    transition: transform 0.3s, box-shadow 0.3s ease; 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+/* Ensure box-sizing is consistent */
+* {
+    box-sizing: border-box;
 }
-
+/* Existing card styles */
+.ticket-card {
+    background-color: #9b6e04e1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 19px;
+    margin-bottom: 15px;
+    transition: transform 0.3s, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-right: 10px; /* Add a small right margin */
+    margin-left: 10px; /* Ensure even margins */
+}
 .ticket-card:hover {
     transform: translateY(-5px); /* Subtle lift on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */

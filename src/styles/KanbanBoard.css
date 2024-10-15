@@ -146,11 +146,11 @@
 
     .board-columns {
         flex-direction: column;
-        width: 100%;
+        width: 90%;
     }
 
     .kanban-column {
-        min-width: 100%;
+        min-width: 90%;
         margin-bottom: 20px; /* Add spacing between columns */
     }
 }
