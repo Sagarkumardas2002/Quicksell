@@ -1,14 +1,16 @@
 .ticket-card {
-    background-color: #7e7777b0; 
+    background-color: #9b6e04e1; /* Muted dark blue-gray background */
     border: 1px solid #ddd; 
     border-radius: 8px; 
     padding: 19px; 
     margin-bottom: 15px; 
-    transition: transform 0.3s; 
+    transition: transform 0.3s, box-shadow 0.3s ease; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 .ticket-card:hover {
-    transform: translateY(-2px); 
+    transform: translateY(-5px); /* Subtle lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .ticket-header {
@@ -20,18 +22,20 @@
 }
 
 .ticket-title {
-    flex: 1; /* Allow title to take the remaining space */
-    font-size: 1rem; /* Adjust font size as needed */
-    line-height: 1; /* Adjust line height for readability */
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1;
+    color: #ffffff; /* White text for contrast against dark background */
 }
 
 .ticket-priority {
-    background-color: #855109; 
+    background-color: #e63946; /* Vibrant red for priority */
     padding: 8px 8px;
     border-radius: 4px;
-    text-align: center; 
-    width: 120px; 
+    text-align: center;
+    width: 120px;
     font-weight: 400;
+    color: #ffffff; /* White text for better readability */
 }
 
 .ticket-tags {
@@ -39,45 +43,40 @@
 }
 
 .ticket-tag {
-    background-color: hsl(64, 82%, 62%); 
-    color: rgb(16, 5, 5);
+    background-color: #2a9d8f; /* Teal green for tags */
+    color: #ffffff; /* White text for tags */
     border-radius: 4px;
     padding: 2px 6px;
     margin-right: 5px;
     font-size: 0.8rem;
 }
 
-
 .read-more {
-    color: #007BFF; /* Blue color for 'Read More' */
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    margin-left: 5px; /* Adds space between the title and the 'Read More' link */
+    color: #007BFF; /* Blue for 'Read More' link */
+    cursor: pointer;
+    margin-left: 5px;
     font-weight: normal;
 }
 
 .read-more:hover {
-    text-decoration: underline; /* Adds underline on hover for better UX */
+    text-decoration: underline;
 }
 
 .show-less {
-    color: #FF5733; /* Red color for 'Show Less' */
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    margin-left: 5px; /* Adds space between the title and the 'Show Less' link */
-        font-weight: normal;
-
+    color: #FF5733; /* Red for 'Show Less' link */
+    cursor: pointer;
+    margin-left: 5px;
+    font-weight: normal;
 }
 
 .show-less:hover {
-    text-decoration: underline; /* Adds underline on hover for better UX */
-}   
+    text-decoration: underline;
+}
+
 .ticket-meta {
     display: flex;
     align-items: center;
     font-size: 1rem;
-    color: #eee1e1;
+    color: hsl(0, 100%, 99%); /* Light gray for meta information */
 }
 
-
-.read-more{
-    columns: blue;
-}
